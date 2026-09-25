@@ -1,0 +1,94 @@
+#create date base
+CREATE DATABASE ecommerce_db;
+USE ecommerce_db;
+#Create Order Table
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    product_name VARCHAR(50),
+    category VARCHAR(50),
+    quantity INT,
+    price INT,
+    order_date DATE,
+    city VARCHAR(50)
+);
+
+#sample data insertion 
+
+INSERT INTO orders VALUES
+(1, 'Rahul', 'Laptop', 'Electronics', 1, 60000, '2025-01-10', 'Hyderabad'),
+(2, 'Sneha', 'Mobile', 'Electronics', 2, 20000, '2025-01-12', 'Bangalore'),
+(3, 'Amit', 'Shoes', 'Fashion', 3, 3000, '2025-02-05', 'Chennai'),
+(4, 'Priya', 'Watch', 'Accessories', 1, 5000, '2025-02-20', 'Mumbai'),
+(5, 'Karan', 'Laptop', 'Electronics', 1, 65000, '2025-03-15', 'Delhi'),
+(6, 'Anjali', 'Bag', 'Fash, 2, 2500, '2025-03-18', 'Hyderabad'),
+(7, 'Vikram', 'Headphones', 'Electronicion's', 2, 4000, '2025-04-02', 'Pune'),
+(8, 'Neha', 'Shoes', 'Fashion', 1, 3500, '2025-04-10', 'Bangalore'),
+(9, 'Arjun', 'Tablet', 'Electronics', 1, 30000, '2025-04-12', 'Chennai'),
+(10, 'Meera', 'Dress', 'Fashion', 2, 4500, '2025-04-14', 'Mumbai'),
+(11, 'Rohit', 'Smart Watch', 'Electronics', 1, 12000, '2025-04-16', 'Delhi'),
+(12, 'Divya', 'Handbag', 'Accessories', 1, 7000, '2025-04-18', 'Hyderabad'),
+(13, 'Suresh', 'Keyboard', 'Electronics', 2, 1500, '2025-04-20', 'Pune'),
+(14, 'Pooja', 'Sandals', 'Fashion', 2, 2200, '2025-04-21', 'Bangalore'),
+(15, 'Nikhil', 'Monitor', 'Electronics', 1, 18000, '2025-04-22', 'Chennai'),
+(16, 'Kavya', 'Makeup Kit', 'Beauty', 1, 3500, '2025-04-23', 'Mumbai'),
+(17, 'Harsha', 'Gaming Mouse', 'Electronics', 1, 2500, '2025-04-24', 'Delhi'),
+(18, 'Lavanya', 'Perfume', 'Beauty', 2, 2800, '2025-04-25', 'Hyderabad'),
+(19, 'Tarun', 'Printer', 'Electronics', 1, 9000, '2025-04-26', 'Pune'),
+(20, 'Sana', 'Kurti', 'Fashion', 3, 1800, '2025-04-27', 'Bangalore'),
+(21, 'Ajay', 'Speaker', 'Electronics', 1, 6000, '2025-04-28', 'Chennai'),
+(22, 'Isha', 'Necklace', 'Accessories', 1, 4500, '2025-04-29', 'Mumbai'),
+(23, 'Deepak', 'Power Bank', 'Electronics', 2, 2000, '2025-04-30', 'Delhi'),
+(24, 'Riya', 'Jeans', 'Fashion', 2, 2500, '2025-05-01', 'Hyderabad'),
+(25, 'Manoj', 'Camera', 'Electronics', 1, 45000, '2025-05-02', 'Pune'),
+(26, 'Shreya', 'Lipstick', 'Beauty', 3, 1200, '2025-05-03', 'Bangalore'),
+(27, 'Akash', 'TV', 'Electronics', 1, 55000, '2025-05-04', 'Chennai'),
+(28, 'Nandini', 'Earrings', 'Accessories', 2, 1500, '2025-05-05', 'Mumbai'),
+(29, 'Varun', 'AC', 'Electronics', 1, 40000, '2025-05-06', 'Delhi'),
+(30, 'Bhavana', 'Saree', 'Fashion', 1, 6000, '2025-05-07', 'Hyderabad'),
+(31, 'Rakesh', 'Mixer', 'Home Appliances', 1, 5000, '2025-05-08', 'Pune'),
+(32, 'Keerthi', 'Bedsheet', 'Home Decor', 2, 1800, '2025-05-09', 'Bangalore'),
+(33, 'Yash', 'Fridge', 'Home Appliances', 1, 30000, '2025-05-10', 'Chennai'),
+(34, 'Madhavi', 'Curtains', 'Home Decor', 3, 1200, '2025-05-11', 'Mumbai'),
+(35, 'Abhi', 'Router', 'Electronics', 1, 3500, '2025-05-12', 'Delhi'),
+(36, 'Swathi', 'Jacket', 'Fashion', 1, 4500, '2025-05-13', 'Hyderabad'),
+(37, 'Gopi', 'Microwave', 'Home Appliances', 1, 10000, '2025-05-14', 'Pune'),
+(38, 'Anu', 'Sunglasses', 'Accessories', 2, 2500, '2025-05-15', 'Bangalore'),
+(39, 'Teja', 'Bluetooth Speaker', 'Electronics', 1, 5000, '2025-05-16', 'Chennai'),
+(40, 'Siri', 'Face Cream', 'Beauty', 2, 1500, '2025-05-17', 'Mumbai'),
+(41, 'Chaitanya', 'Washing Machine', 'Home Appliances', 1, 28000, '2025-05-18', 'Delhi'),
+(42, 'Reshma', 'Trolley Bag', 'Accessories', 1, 7000, '2025-05-19', 'Hyderabad'),
+(43, 'Venu', 'Fan', 'Home Appliances', 2, 2500, '2025-05-20', 'Pune'),
+(44, 'Pallavi', 'Top', 'Fashion', 3, 1500, '2025-05-21', 'Bangalore'),
+(45, 'Kishore', 'Projector', 'Electronics', 1, 22000, '2025-05-22', 'Chennai'),
+(46, 'Anitha', 'Wall Clock', 'Home Decor', 2, 1200, '2025-05-23', 'Mumbai'),
+(47, 'Sai', 'Iron Box', 'Home Appliances', 1, 2500, '2025-05-24', 'Delhi'),
+(48, 'Mounika', 'Bracelet', 'Accessories', 2, 1800, '2025-05-25', 'Hyderabad'),
+(49, 'Naveen', 'SSD', 'Electronics', 1, 8000, '2025-05-26', 'Pune'),
+(50, 'Aparna', 'Heels', 'Fashion', 1, 3200, '2025-05-27', 'Bangalore');
+
+#sql queries used
+#Total Revenue
+SELECT SUM(quantity * price) AS total_revenue
+FROM orders;
+
+#Top Selling Products
+SELECT product_name,
+       SUM(quantity) AS total_quantity
+FROM orders
+GROUP BY product_name
+ORDER BY total_quantity DESC;
+
+#Revenue by Category
+SELECT category,
+       SUM(quantity * price) AS revenue
+FROM orders
+GROUP BY category;
+
+#Monthly Sales Trend
+SELECT MONTH(order_date) AS month,
+       SUM(quantity * price) AS monthly_sales
+FROM orders
+GROUP BY MONTH(order_date)
+ORDER BY month;
+

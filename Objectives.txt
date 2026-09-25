@@ -1,0 +1,5 @@
+Analyze customer orders and sales performance
+Identify top-selling products and high-revenue categories
+Track monthly sales trends
+Perform city-wise and category-wise analysis
+Create interactive Excel dashboards for reporting

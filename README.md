@@ -1,2 +1,2 @@
-# E-commerce_project
-E-commerce Sales Analysis | SQL, Excel Analyzed e-commerce sales data using SQL and Excel to extract actionable business insights. Evaluated revenue performance across product categories, regions, and individual items. Compared sales trends between discounted and non-discounted products to measure promotional impact.
+# E-Commerce-Dashboard-Project-MySQL-Excel-
+This project focuses on analyzing e-commerce sales data using MySQL and Excel to generate business insights and create interactive dashboards. The project demonstrates data analysis, SQL querying, reporting, and dashboard creation skills commonly used in Data Analyst roles.

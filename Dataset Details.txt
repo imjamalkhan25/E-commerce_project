@@ -1,0 +1,8 @@
+Order ID
+Customer Name
+Product Name
+Category
+Quantity
+Price
+Order Date
+City
